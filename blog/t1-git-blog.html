@@ -42,13 +42,11 @@
 
 <p>--First, you "fetch" the latest version of the centralized set of documents that everyone else is working on too -- this is the "official" version of the app, and in Git terms is known as the "origin;"</p>
 
-<p>--Then you make a new "fork" of that program on your local computer, which is essentially one private version of those files that you and ONLY you have access to;</p>
-
-<p>--Then you make your own changes to that program on your own computer in your own fork, using a text editor like Sublime (or, hey, just even SimpleText if you want -- the text editor doesn't matter, as long as it's outputting true ASCII plain text, not specialized "formatted text" like in Microsoft Word for example);</p>
+<p>--Then you make your own changes to that program on your own computer, using a text editor like Sublime (or, hey, just even SimpleText if you want -- the text editor doesn't matter, as long as it's outputting true ASCII plain text, not specialized "formatted text" like in Microsoft Word for example);</p>
 
 <p>--Then you "add" those changed documents to what's called a "staged" version of your new origin; basically, that's a new version of the program that's <i>almost</i> ready to become official, except for taking one last look through it and making sure it's doing everything you want it to. (And in fact, most often when it's teams of people working together, a staged version of a program will actually be sent to someone else for a final looking over; asking someone to do this for you is known as making a "pull request," in that they then "pull" your local version over to their own local computer to take a look at it.)</p>
 
-<p>--Then once you're confident that your staged version is looking fine, you then "commit" that version back to the centralized origin. At that point Git makes a note that a new version (or "commit" as a noun) has been made, it logs it into its master log of all commits, and it replaces the older version with your new version to become the new "origin" version that everyone else will now fetch themselves.</p>
+<p>--Then once you're confident that your staged version is looking fine, you then "commit" that version so that it's now your new master copy, then "push" that new master back to the centralized origin. At that point Git makes a note that a new version (or "commit" as a noun) has been made, it logs it into its master log of all commits, and it replaces the older version with your new version to become the new "origin" version that everyone else will now fetch themselves.</p>
 
 <p>--Repeat one thousand times, and you have a working computer program!</p>
 
