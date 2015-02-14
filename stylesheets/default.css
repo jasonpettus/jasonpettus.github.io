@@ -16,7 +16,7 @@ nav {
 }
 
 .menu {
-  position: fixed;
+  position: relative;
   background-color: black;
   margin: 1em 0 1em 0;
   padding: .5em .5em .5em 0;
