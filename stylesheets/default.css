@@ -1,15 +1,18 @@
 html {
   background-color: gray;
   font-family: Garamond, Times New Roman;
-
+  padding: 0;
+  margin: 0;
 }
 
 nav {
   position: fixed;
   top: 10%;
-  left: 0%;
+  left: 0;
   right: 80%;
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
@@ -31,6 +34,7 @@ header {
   width: 50%;
   padding: 1em;
   margin: auto;
+  margin-bottom: 2em;
   border-radius: 1em;
   text-align: center;
 }
