@@ -46,7 +46,7 @@ article {
 }
 
 p {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -68,25 +68,25 @@ a:active {
 }
 
 h1 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
 
 h2 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
 }
 
 h3 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1em;
   font-weight: normal;
 }
 
 h4 {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1.5em;
   font-style: italic;
   font-weight: bold;
