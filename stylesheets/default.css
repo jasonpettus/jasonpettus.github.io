@@ -16,8 +16,8 @@ nav {
 
 .menu {
   background-color: black;
-  margin-bottom: 1em;
-  padding: 0;
+  margin-bottom: 0;
+  padding: 1em;
   border-radius: 0;
   color: #ffffcc;
 }
