@@ -17,11 +17,7 @@ nav {
 .menu {
   background-color: black;
   margin-bottom: 1em;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  padding-right: 1.5em;
-  padding-left: 0em;
-  border-radius: 0;
+  padding: .1em 1.5em .1em 0;
   color: #ffffcc;
 }
 
