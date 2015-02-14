@@ -18,7 +18,7 @@ nav {
 .menu {
   background-color: black;
   margin-bottom: 1em;
-  padding: 1em;
+  padding: 10px;
   border-radius: 0 3em 3em 0;
   color: white;
 }
@@ -69,16 +69,20 @@ a:active {
 
 h1 {
   font-size: 2em;
-  text-transform: capitalize;
+  font-variant: small-caps;
 }
 
 h2 {
   font-size: 1.5em;
-  text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.5em;
   font-style: italic;
 }
 
