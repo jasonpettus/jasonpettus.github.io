@@ -1,6 +1,5 @@
 html {
   background-color: gray;
-  font-family: Garamond, Times New Roman;
   padding: 0;
   margin: 0;
 }
@@ -49,6 +48,7 @@ article {
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 a:link {
@@ -68,25 +68,25 @@ a:active {
 }
 
 h1 {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: 'Bigshot One', cursive;
   font-size: 2em;
   font-weight: normal;
 }
 
 h2 {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: 'Bigshot One', cursive;
   font-size: 1.5em;
   font-weight: normal;
 }
 
 h3 {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: 'Bigshot One', cursive;
   font-size: 1em;
   font-weight: normal;
 }
 
 h4 {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: 'Bigshot One', cursive;
   font-size: 1.5em;
   font-style: italic;
   font-weight: normal;
