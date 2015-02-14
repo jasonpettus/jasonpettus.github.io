@@ -17,7 +17,7 @@ nav {
 .menu {
   background-color: black;
   margin-bottom: 1em;
-  padding: .3em 2em .3em 0;
+  padding: 10px;
   border-radius: 0 3em 3em 0;
   color: #ffffcc;
 }
@@ -58,7 +58,6 @@ a:visited {
 
 a:hover {
   color: #cc99ff;
-  background-color: #9966ff;
 }
 
 a:active {
@@ -99,4 +98,8 @@ ul {
 li {
   padding: 0;
   margin: 0;
+}
+
+.purple {
+  background-color: #9966ff;
 }
