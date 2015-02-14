@@ -46,9 +46,10 @@ article {
 }
 
 p {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   line-height: 1.5em;
+  font-weight: 400;
 }
 
 a:link {
@@ -68,28 +69,28 @@ a:active {
 }
 
 h1 {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h3 {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  font-weight: normal;
+  font-weight: 900;
 }
 
 h4 {
-  font-family: 'Anaheim', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 ul {
