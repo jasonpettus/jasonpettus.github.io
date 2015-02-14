@@ -1,10 +1,13 @@
 html {
   background-color: gray;
+  font-family: Garamond, Times New Roman;
+
 }
 
 nav {
   position: fixed;
   top: 30%;
+  left: 0%;
   right: 20%;
   text-align: right;
 }
@@ -13,7 +16,7 @@ nav {
   background-color: black;
   margin: 1em;
   padding: 1em;
-  border-radius: 100% 100% 0% 0%;
+  border-radius: 10% 10% 0% 0%;
   color: white;
 }
 
@@ -26,7 +29,7 @@ header {
   top: 5%;
   width: 50%;
   margin: auto;
-  border-radius: 100%;
+  border-radius: 10%;
   text-align: center;
 }
 
@@ -34,7 +37,7 @@ article {
   background-color: #ffffcc;
   width: 50%;
   margin: auto;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 
 p {
@@ -43,19 +46,19 @@ p {
 }
 
 a:link {
-  background-color: #9966ff;
+  color: #9966ff;
 }
 
 a:visited {
-  background-color: #6633cc;
+  color: #6633cc;
 }
 
 a:hover {
-  background-color: #cc99ff;
+  color: #cc99ff;
 }
 
 a:active {
-  background-color: #ffffff;
+  color: #ffffff;
 }
 
 h1 {
@@ -73,3 +76,6 @@ h4 {
   font-style: italic;
 }
 
+ul {
+  list-style-type: none;
+}
