@@ -103,3 +103,8 @@ li {
 .purple {
   background-color: #6633cc;
 }
+
+.floatleft {
+  float: left;
+  padding-right: 1em;
+}
