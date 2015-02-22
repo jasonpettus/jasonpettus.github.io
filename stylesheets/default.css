@@ -108,3 +108,8 @@ li {
   float: left;
   padding-right: 1em;
 }
+
+.center {
+  text-align: left;
+  margin: auto;
+}
