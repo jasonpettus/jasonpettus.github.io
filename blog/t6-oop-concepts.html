@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <title>Jason Pettus: DevBootcamp Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+</head>
+
+<nav>
+<ul>
+  <li class="menu"><h1>Jason Pettus</h1> <a href="http://jasonpettus.github.io/"><h4>$developer:intraining;</a></h4></li>  <li class="menu"><a href="http://jasonpettus.github.io/projects.html"><h4>Projects</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/about.html"><h4>About</h4></a></li>
+  <li class="menu purple"><a href="http://jasonpettus.github.io/blog/index.html"><h4>DevBootcamp Blog</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/cclap.html"><h4>CCLaP</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/contact.html"><h4>Contact</h4></a></li>
+</ul>
+</nav>
+
+<header>
+  <h1>DevBootcamp Tech Blog Week 6</h1>
+  <h2>Variable scope and agile programming</h2>
+  <h3>March 14, 2015</h3>
+</header>
+
+<article>
+<p>Today's tech blog post is about a subject I find really fascinating, the various "scopes" that all variables in Ruby are defined as, and what this says about the way your overall program is designed; and to fully discuss this topic, we'll have to get a little into the concept of "agile" programming today too, which is really more of a philosophical movement within the world of computer coding than anything else. As always, these posts are being written from the viewpoint of those with absolutely no technical knowledge at all; although the farther we get into this technical blog each week, the more fundamental basics you're going to start needing to know to keep up, so if you never have you might want today to go first check out my previous posts on <a href="http://jasonpettus.github.io/blog/t3-arrays-hashes.html">arrays and hashes</a>, <a href="http://jasonpettus.github.io/blog/t4-enumerable-methods.html">methods and models</a>, and <a href="http://jasonpettus.github.io/blog/t5-ruby-classes.html">classes</a>. The best tutorials on programming always seem to come up with their theoretical real-world client who serves as our programming Everyuser, someone we revisit over and over and can keep rooting for, so let's have one of our own today...</p>
+
+<p>Meet Jane, who after saving her pennies for a long time has finally just opened a new bookstore here in the Uptown neighborhood of Chicago where I am too, appropriately enough named "Jane's Books." To cut corners, Jane is programming by herself all the various routines she will need to do online; so just to start with, we can already assume that she'll probably be putting a module together called "Operational," which will be full of methods that perform various operational details from that store's handbook itself, and the values to make the methods work. Remember, if classes are the "subjects" by which we write our "complete sentences" when coding a Ruby program, then modules are the "adjectives," which is why it's common to name them in adjective form, like we have here; so anytime we define new class for doing something new in the store, like say a "book_purchase" from one of Jane's wholesale distributors, that class can "mix in" all the methods and values stored in "operational," so that the "plain-language sentence" you're writing is, "The subject of buying books from distributors is a subject having to do with the store's operations, and therefore needs access to the full handbook of the store's operations and all the details that are in it." So like so...</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">module</span> <span style="color: #0e84b5; font-weight: bold">Operational</span>
+   <span style="color: #888888"># methods and values will all go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+
+<span style="color: #008800; font-weight: bold">class</span> book_purchase
+   <span style="color: #003388; font-weight: bold">include</span> <span style="color: #003366; font-weight: bold">Operational</span>
+   <span style="color: #888888"># methods and values will all go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+</pre></td></tr></table></div>
+
+<p>So let's say that one of the things that we want to include in the Operational module is the fact that Illinois' sales tax is 9 percent; and that this number is unchanging and stable enough, and exists as a known fact across such a wide part of the universe, that it can be considered a "constant" about the universe. So in that case, we would define it as a <b>constant</b> variable, written in all capital letters (by convention, not by necessity) as a big red flag to other programmers -- this is not only a value that will carry across to every single corner of our big wide program, but you will get an "are you sure?" warning sign if you ever try to change it. But another fact we might want to establish is that the store opens every morning at 9:30 a.m., which is a consistent true fact about our store in particular, and again should be carried across all elements of our program with the same definition; but it's not a law about the world in general, that all stores in Chicago open at 9:30. So in that case you would define it as a <b>global</b> variable, by using a dollar sign at the beginning, a variable that works exactly the same way as a constant one does, only sends a different plain-language message to the next programmers who are looking through all this code.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">module</span> <span style="color: #0e84b5; font-weight: bold">Operational</span>
+   <span style="color: #003366; font-weight: bold">SALES_TAX</span> <span style="color: #333333">=</span> <span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">0925</span>
+   <span style="color: #dd7700; font-weight: bold">$store_open</span> <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0930</span>
+   <span style="color: #888888"># other methods and values will all go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+
+<span style="color: #008800; font-weight: bold">class</span> book_purchase
+   <span style="color: #003388; font-weight: bold">include</span> <span style="color: #003366; font-weight: bold">Operational</span>
+   <span style="color: #888888"># methods and values will all go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+</pre></td></tr></table></div>
+
+<p>But of course there's also going to be information to be called up in every new book purchase Jane makes on her computer, which in Ruby is known as a new "instance" of that class, using the process of "instantiation;" so those will be logged in as <b>class</b> variables, typically marked by two ampersands, which means that that value will be carried across as the same to every instance of that class, but not to other classes. (See here, for example, how maybe Jane wants to keep a running total of every book purchase she makes in a given period of time, so that later she can do things with it like add it together, sort it, find the average, etc. Every new instance of a book purchase will add its own particular total to that running list, and the always updated results of that list will be avaiable to every other instance to add to it.) But of course, that can drop down a level in scope from there too; there will be some bits of data you might need to access several times within an instance, but that doesn't need to be accessible from any other instance, so in that case you'd write it as an <b>instance</b> variable, marked by a single ampersand. (So here, our sample instance variable is the one that shows the total amount of the check Jane wrote to that distributor, once you add the sales tax to the subtotal of just the books themselves; but that number needs to be accessed from another method in that instance too, the one that adds that latest total to the end of our "sales_list" array always being updated.) And then finally, there are variables that <i>just</i> need to be referenced from within one single method, and nowhere else -- see for example here, the "book_amount" that is entered by the user when they call on "total_payment," used to calculate the "total_amount" plus tax, then throws that previous number away because it has no more use for it -- this can be written simply as a <b>local</b> variable, by using no symbols at all, simply the lowercase word you decided to use to define it.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">module</span> <span style="color: #0e84b5; font-weight: bold">Operational</span>
+   <span style="color: #003366; font-weight: bold">SALES_TAX</span> <span style="color: #333333">=</span> <span style="color: #333333">.</span><span style="color: #0000DD; font-weight: bold">0925</span>
+   <span style="color: #dd7700; font-weight: bold">$store_open</span> <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0930</span>
+   <span style="color: #888888"># other methods and values will go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+
+<span style="color: #008800; font-weight: bold">class</span> book_purchase
+   <span style="color: #003388; font-weight: bold">include</span> <span style="color: #003366; font-weight: bold">Operational</span>
+   <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>
+      <span style="color: #336699">@@sales_list</span> <span style="color: #333333">=</span> <span style="color: #333333">[]</span>
+   <span style="color: #008800; font-weight: bold">end</span>
+
+   <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">total_payment</span>(book_amount)
+      <span style="color: #3333BB">@total_amount</span> <span style="color: #333333">=</span> book_amount <span style="color: #333333">+</span> (book_amount <span style="color: #333333">*</span> <span style="color: #003366; font-weight: bold">SALES_TAX</span>)
+   <span style="color: #008800; font-weight: bold">end</span>
+
+   <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">sales_list_add</span>
+      <span style="color: #336699">@@sales_list</span> <span style="color: #333333">&lt;&lt;</span> <span style="color: #3333BB">@total_amount</span>
+   <span style="color: #008800; font-weight: bold">end</span>
+
+   <span style="color: #888888"># other methods and values will go here</span>
+<span style="color: #008800; font-weight: bold">end</span>
+</pre></td></tr></table></div>
+
+<p>But why go to all this trouble? Why do these specific variables go in those specific areas of the program and not somewhere else? Why not just make all of them global and be done with it? Well, that gets into the "<a href="http://en.wikipedia.org/wiki/Agile_software_development">agile programming</a>" part of the discussion, which like I said is more of a philosophy than anything else, a series of theories and "best practices" among a certain set of programmers regarding what they feel are the best ways to actually write programs. It's an intellectually very stimulating part of Ruby for me in particular, after having slogged through all the math and all the memorization of individual grunt-level methods over the last five weeks here, a purposely ambiguous topic with no clear "right" or "wrong" answers but rather competing schools of thoughts, which I noticed threw a lot of my fellow students into confused palpitations this week, encountering a challenge that didn't tell them whether their answer was definitively correct or not.</p>
+
+<p>There's a lot of different things to think about, and many different general guides and pieces of advice to follow -- for a fantastic overview that sometimes reads almost like poetry, check out Sandi Metz's <i>Practial Object-Oriented Design for Ruby</i> -- but one of them is that a good program doesn't let its pieces have any more access to the other pieces than it absolutely has to, because the less random communication is allowed the less chances there will be to screw things up; so that's why you don't just make everything a global variable, but rather only go up to the highest scope needed to share what you absolutely need to. (And of course, another issue is simply one of naming -- you can reuse the same local variable names over and over in individual methods, because of them not crossing over into any other method, while a class module needs to be a unique name among the rest of that class, all its instances, and every method found in them all.) And why they go in the slots that they do, why they're class variables versus instance variables (for one example), that has to do with common-sense thinking, as well as thinking into the future about all the things that code might have to do that still hasn't been anticipated. What is Jane's store is a huge success, and she ends up opening a whole chain of them across the city? Good thing you've got your sales tax listed in the Operational module instead of the "book_purchase" class, because now it will be automatically brought over to the classes at all the new stores too. This is where you get into all the philosophical "no right or wrong answers" stuff, which sometimes throws more math-oriented programmers off-track, but like I said is the part I find most fascinating.</p>
+
+<p>Anyway, I think that'll do it for this week, and I hope you'll have a chance to come by next weekend as well, for my first look at a brand-new topic we're tackling for the first time in week 7 -- JAVASCRIPT! Yee-haw! See you then!</p>
+
+</article>
