@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Jason Pettus: DevBootcamp Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+</head>
+
+<nav>
+<ul>
+  <li class="menu"><h1>Jason Pettus</h1> <a href="http://jasonpettus.github.io/"><h4>$developer:intraining;</a></h4></li>  <li class="menu"><a href="http://jasonpettus.github.io/projects.html"><h4>Projects</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/about.html"><h4>About</h4></a></li>
+  <li class="menu purple"><a href="http://jasonpettus.github.io/blog/index.html"><h4>DevBootcamp Blog</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/cclap.html"><h4>CCLaP</h4></a></li>
+  <li class="menu"><a href="http://jasonpettus.github.io/contact.html"><h4>Contact</h4></a></li>
+</ul>
+</nav>
+
+<header>
+  <h1>DevBootcamp Technical Blog Week 7</h1>
+  <h2>JavaScript vs. Ruby</h2>
+  <h3>March 22, 2015</h3>
+</header>
+
+<article>
+<p>This week was a bit of a reboot for us here at DBC; after a really intense month of learning Ruby at an accelerated pace, we changed track and started studying the basics this week of JavaScript, which like Ruby is an object-oriented programming language, but once that's been around longer, is a little stricter than Ruby, and is a little less powerful than Ruby, although with its power directed at the very concentrated subject of manipulating the pages in a web browser. (And note that this has absolutely nothing to do at all with the far more complicated programming language Java; it was simply named similarly in the 1990s as a way to trick people into adopting it faster, with the much more sensible name "Mocha" first floated and then rejected right after it was invented.)</p>
+
+<p>This was ironically a great way for us to take a bit of a breather this week, to take on a whole new language for the first time; becuase much like the relationship between Spanish and Italian, there are many basics that JavaScript and Ruby share (not by coincidence), so knowing the fundamentals of one almost lets you automatically know the fundamentals of the other, although with lots of little differences in the actual semantics of typing the code out, regarding where the comma or semicolon appears in one versus the other, etc. Like, let's look at the phenomenon of defining an array of data, for one good example, in a way so that you as the programmer can define not only the value in each piece of data, but the label that piece of data is called. In Ruby such a thing is known as a "hash;" and if we were looking again at our old pal Jane of Jane's Bookstore, who <a href="t6-oop-concepts.html">we all got introduced to last week</a>, maybe a typical hash in her store's database might look like the following...</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7</pre></td><td><pre style="margin: 0; line-height: 125%">new_book <span style="color: #333333">=</span> {
+  title <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Moby-Dick&quot;</span>,
+  author <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Melville, Herman&quot;</span>,
+  year <span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">1851</span>,
+  genre <span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Fiction&quot;</span>,
+  keywords <span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="background-color: #fff0f0">&quot;Whaling&quot;</span>, <span style="background-color: #fff0f0">&quot;Victorian&quot;</span>, <span style="background-color: #fff0f0">&quot;Classic&quot;</span><span style="color: #333333">]</span>
+}
+</pre></td></tr></table></div>
+
+<p>While in JavaScript such a construct is known as an "object" (a little confusing, because technically everything you're dealing with in an object-oriented language is an object, hence the term), and is expressed like so...</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> newBook <span style="color: #333333">=</span> {
+  title<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Moby-Dick&quot;</span>,
+  author<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Melville, Herman&quot;</span>,
+  year<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1851</span>,
+  genre<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Fiction&quot;</span>,
+  keywords<span style="color: #333333">:</span> [<span style="background-color: #fff0f0">&quot;Whaling&quot;</span>, <span style="background-color: #fff0f0">&quot;Victorian&quot;</span>, <span style="background-color: #fff0f0">&quot;Classic&quot;</span>]
+}
+</pre></td></tr></table></div>
+
+<p>And really, that's it -- I know our assignment today is to go into depth about the differences between Ruby and JavaScript when it comes to the things they try to do, but what's much more remarkable are the similarities between the two, and how the act of learning the basics about one object-oriented language is essentially the act of learning much about them all. And then even to call on a specific piece of data being recorded in these is similar in both languages, just a little different in the actual bleeps and bloops you type on a particular line to get the call to work...</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888"># In Ruby:</span>
+
+<span style="color: #007020">puts</span> <span style="background-color: #fff0f0">&quot;</span><span style="background-color: #eeeeee">#{</span>new_book<span style="color: #333333">[</span>title<span style="color: #333333">]</span><span style="background-color: #eeeeee">}</span><span style="background-color: #fff0f0"> was written in </span><span style="background-color: #eeeeee">#{</span>new_book<span style="color: #333333">[</span>year<span style="color: #333333">].</span><span style="background-color: #fff0f0">&quot;</span>
+</pre></td></tr></table></div>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888">// In JavaScript:</span>
+
+console.log(newBook[title] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; was written in &quot;</span> <span style="color: #333333">+</span> newBook[year] <span style="background-color: #fff0f0">&quot;.&quot;</span>);
+</pre></td></tr></table></div>
+
+<p>So yeah, you can see why this week might've seemed like a refreshing break to all of us in DBC this week, just having a chance to look back at all the things we learned in the first few weeks of Ruby as well, and being able to confirm with our own eyes that this stuff really is starting to sink in, that we really are starting to learn it. They warn us it will be different next week, and that we're going to start learning some of the specific stuff JavaScript does that Ruby can't (thus why it's important to learn both); but for now, the main takeaway today is simply to understand just how similar the basics are between these kinds of related languages, and how the hard work of learning one makes the efforts to learn more a much easier thing.</p>
+
+<p>As always, more next weekend, so I hope you'll have a chance to stop by again then!</p>
+
+</article>
