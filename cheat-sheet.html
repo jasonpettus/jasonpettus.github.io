@@ -11,263 +11,281 @@
 
 <header>
   <h1>Ruby Enumerable Method Cheat Sheet</h1>
-  <p>Ruby is an object-oriented programming language for computers. As part of its makeup, a certain amount of functions have already been defined for the user, and can be called with a simple mention of their name. Here below is a list of all such "enumerable" methods, which are functions that specifically take a set of data and does something to the data.</p>
+  <p>Ruby is an object-oriented programming language for computers. As part of its makeup, a certain amount of functions have already been defined for the user, and can be called with a simple mention of their name. Here below is a list of all such "enumerable" methods, which are functions that specifically take a set of data and do something to the data. (Note that a "collection" as referred to on this page can mean either an array or a hash.)</p>
 
   <p>To see the official Ruby Docs write-up for any particular method, click the method's name.</p>
 </header>
 
 <article>
 <h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-all-3F">#all?</a></b></h2>
-<p>Do all the elements in an array meet a specific criteria?</p>
+<p>Do all the elements in a collection meet a specific criteria?</p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-any-3F">#any?</a></b></h2>
+<p>Do any of the elements in a collection meet a specific criteria?</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-chunk">#chunk</a></b></h2>
+<p>Run a block of code on a collection then return the values as "chunks" of sub-arrays*</p>
+<p>*Only groups consecutive elements into sub-arrays</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-collect">#collect</a></b></h2>
+<p>Run a block of code on an array, then collect the results into a new array*</p>
+<p>*Same thing as #map</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-collect_concat">#collect_concat</a></b></h2>
+<p>Run a block on an array, and flatten the results as one big array itself*</p>
+<p>*Same thing as #flat_map</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-count">#count</a></b></h2>
+<p>Count the number of items in a collection*</p>
+<p>*Similar to both #size and #length, except in #count you can specify a really specific thing to be counted</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-cycle">#cycle</a></b></h2>
+<p>Cycle through a block of code a specified number of times</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-detect">#detect</a></b></h2>
+<p>Find the first instance in a collection of something that matches a block of code*</p>
+<p>*Same thing as #find</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-drop">#drop</a></b></h2>
+<p>Drop a number of items from the beginning of a collection, as defined by the user</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-drop_while">#drop_while</a></b></h2>
+<p>Drop items from a collection, but only if the item meets a certain criteria*</p>
+<p>*Only does this until coming across the first item that returns false</p>
+<p>*Opposite is #take_while</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-each_cons">#each_cons(n)</a></b></h2>
+<p>For each iteration of a loop, perform a block of code on “n” consecutive elements in a row, before moving on to the next iteration</p>
+<p>*Note that this goes through the iteration one element at a time like normal, just that it performs a block of code on multiple items in that collection each time</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-each_entry">#each_entry</a></b></h2>
+<p>Convert a yield into a collection</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-each_slice">#each_slice</a></b></h2>
+<p>Perform a block of code on a collection, but doing it by a certain amount of items all at once, then returning those chunks as separate collections</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-each_with_index">#each_with_index</a></b></h2>
+<p>Perform a block of code on a collection, but also while calling up each index number at the same time</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-each_with_object">#each_with_object</a></b></h2>
+<p>Perform a block of code on a collection, but with an arbitrary object argument added</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-entries">#entries</a></b></h2>
+<p>Converts an object into an array</p>
+<p>*Same exact thing as #to_a</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-find">#find</a></b></h2>
+<p>Find the first instance in a collection of something that matches a block of code</p>
+<p>*Same thing as #detect</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-find_all">#find_all</a></b></h2>
+<p>Perform a block of code on a collection, and output all items that return true*</p>
+<p>*Same exact thing as #select</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-find_index">#find_index</a></b></h2>
+<p>Perform a block of code on a collection, and return the index number of the first value that is true</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-first">#first</a></b></h2>
+<p>Return the first value of a collection, or the first “n” values as defined by the user</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-flat_map">#flat_map</a></b></h2>
+<p>Run a block on an array, and flatten the results as one big array itself*</p>
+<p>*Same thing as #collect_concat</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-grep">#grep</a></b></h2>
+<p>Iterate over a collection and see if any parts of each value match a given regular expression*</p>
+<p>*If a block of code is added, each result that returns true will be passed through the block</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-group_by">#group_by</a></b></h2>
+<p>Run a block of code, then group the results into a hash, with each hash’s key being the number of that iteration</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-include-3F">#include?</a></b></h2>
+<p>Does the collection include the value being defined?</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-inject">#inject</a></b></h2>
+<p>Run a block of code on a collection, then add the results to a new variable with each iteration*</p>
+<p>*The initial value of that new variable can be pre-defined, or else its initial value will be the value after the first iteration</p>
+<p>*Same thing as #reduce</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-lazy">#lazy</a></b></h2>
+<p>Return a “lazy” value of certain enumerables, by combining their results with a certain yield</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-map">#map</a></b></h2>
+<p>Run a block of code on an array, then collect the results into a new array*</p>
+<p>*Same thing as #collect</p>
+</article>
+
+<article>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-max">#max</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-max_by">#max_by</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-member-3F">#member?</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-min">#min</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-min_by">#min_by</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-minmax">#minmax</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-minmax_by">#minmax_by</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-none-3F">#none?</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-one-3F">#one?</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-partition">#partition</a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
 <article>
-<p><b><a href=""></a></b></p>
+<h2><b><a href=""></a></b></h2>
 <p></p>
 </article>
 
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
 
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
-
-<article>
-<p><b><a href=""></a></b></p>
-<p></p>
-</article>
 
