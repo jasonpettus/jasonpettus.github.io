@@ -1,0 +1,105 @@
+.goudy {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.lora {
+  font-family: 'Lora', serif;
+}
+
+.vollkorn {
+  font-family: 'Vollkorn', serif;
+}
+
+.crimson {
+  font-family: 'Crimson Text', serif;
+}
+
+.cardo {
+  font-family: 'Cardo', serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
+}
+
+.lusitana {
+  font-family: 'Lusitana', serif;
+}
+
+.fanwood {
+  font-family: 'Fanwood Text', serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+.redline {
+  border: 1px dotted red;
+}
+
+.container {
+  margin: auto;
+  background-color: #3F51B5;
+}
+
+.masthead {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.image {
+  background-image: url("obama.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mdl-grid {
+  max-width: 900px;
+}
+
+.mdl-cell {
+  padding: 0.75em;
+  background-color: white;
+}
+
+.logo {
+  font-size: 4em;
+}
+
+.large {
+  font-size: 2em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+.med_box_image {
+  height: 25%;
+}
+
+.round {
+  border-radius: 15px;
+}
+
+.white {
+  background-color: white;
+}
+
+.t-white {
+  color: white;
+}
