@@ -950,16 +950,14 @@ ul, ol {
 .mdl-typography--title {
   font-family: 'Lusitana', serif;
   font-size: 20px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.02em; }
+  font-weight: 700;
+  line-height: 1; }
 
 .mdl-typography--title-color-contrast {
   font-family: 'Lusitana', serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.02em;
   opacity: 0.87; }
 
 .mdl-typography--subhead {
@@ -993,16 +991,12 @@ ul, ol {
 .mdl-typography--body-1 {
   font-family: 'Lusitana', serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0; }
+  font-weight: 400; }
 
 .mdl-typography--body-1-color-contrast {
   font-family: 'Lusitana', serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--body-2-force-preferred-font {
@@ -1023,16 +1017,12 @@ ul, ol {
 .mdl-typography--body-1-force-preferred-font {
   font-family: 'Lusitana', serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0; }
+  font-weight: 400; }
 
 .mdl-typography--body-1-force-preferred-font-color-contrast {
   font-family: 'Lusitana', serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--caption {
@@ -9432,36 +9422,30 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-typography--title {
     font-family: 'Lusitana', serif;
     font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em; }
+    font-weight: 700;
+    line-height: 1; }
 
   .mdl-typography--title-color-contrast {
     font-family: 'Lusitana', serif;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.02em;
     opacity: 0.87; }
 
   .mdl-typography--body-1 {
     font-family: 'Lusitana', serif;
     font-size: 28px;
-    font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0; }
+    font-weight: 400; }
 
   .mdl-typography--body-1-color-contrast {
     font-family: 'Lusitana', serif;
     font-size: 28px;
     font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0;
     opacity: 0.87; } }
 
-/* --------------------------------------------- IPHONE 6 ONLY */
+/* --------------------------------------------- IPHONE ONLY */
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
   .mdl-grid {
     padding: 8px; }
   .mdl-cell {
@@ -9571,170 +9555,25 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-typography--title {
     font-family: 'Lusitana', serif;
     font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em; }
+    font-weight: 700;
+    line-height: 1; }
 
   .mdl-typography--title-color-contrast {
     font-family: 'Lusitana', serif;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.02em;
     opacity: 0.87; }
 
   .mdl-typography--body-1 {
     font-family: 'Lusitana', serif;
     font-size: 28px;
-    font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0; }
+    font-weight: 400; }
 
   .mdl-typography--body-1-color-contrast {
     font-family: 'Lusitana', serif;
     font-size: 28px;
     font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0;
-    opacity: 0.87; } }
-
-/* --------------------------------------------- IPHONE 5 ONLY */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-  .mdl-grid {
-    padding: 8px; }
-  .mdl-cell {
-    margin: 8px;
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell {
-      width: 100%; }
-  .mdl-cell--hide-phone {
-    display: none !important; }
-  .mdl-cell--1-col {
-    width: calc(25% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--1-col {
-      width: 25%; }
-  .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
-    width: calc(25% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
-      width: 25%; }
-  .mdl-cell--2-col {
-    width: calc(50% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--2-col {
-      width: 50%; }
-  .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
-    width: calc(50% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
-      width: 50%; }
-  .mdl-cell--3-col {
-    width: calc(75% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--3-col {
-      width: 75%; }
-  .mdl-cell--3-col-phone.mdl-cell--3-col-phone {
-    width: calc(75% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--3-col-phone.mdl-cell--3-col-phone {
-      width: 75%; }
-  .mdl-cell--4-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--4-col {
-      width: 100%; }
-  .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
-      width: 100%; }
-  .mdl-cell--5-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--5-col {
-      width: 100%; }
-  .mdl-cell--5-col-phone.mdl-cell--5-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--5-col-phone.mdl-cell--5-col-phone {
-      width: 100%; }
-  .mdl-cell--6-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--6-col {
-      width: 100%; }
-  .mdl-cell--6-col-phone.mdl-cell--6-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--6-col-phone.mdl-cell--6-col-phone {
-      width: 100%; }
-  .mdl-cell--7-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--7-col {
-      width: 100%; }
-  .mdl-cell--7-col-phone.mdl-cell--7-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--7-col-phone.mdl-cell--7-col-phone {
-      width: 100%; }
-  .mdl-cell--8-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--8-col {
-      width: 100%; }
-  .mdl-cell--8-col-phone.mdl-cell--8-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--8-col-phone.mdl-cell--8-col-phone {
-      width: 100%; }
-  .mdl-cell--9-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--9-col {
-      width: 100%; }
-  .mdl-cell--9-col-phone.mdl-cell--9-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--9-col-phone.mdl-cell--9-col-phone {
-      width: 100%; }
-  .mdl-cell--10-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--10-col {
-      width: 100%; }
-  .mdl-cell--10-col-phone.mdl-cell--10-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--10-col-phone.mdl-cell--10-col-phone {
-      width: 100%; }
-  .mdl-cell--11-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--11-col {
-      width: 100%; }
-  .mdl-cell--11-col-phone.mdl-cell--11-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--11-col-phone.mdl-cell--11-col-phone {
-      width: 100%; }
-  .mdl-cell--12-col {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--12-col {
-      width: 100%; }
-  .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
-    width: calc(100% - 16px); }
-    .mdl-grid--no-spacing > .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
-      width: 100%; }
-
-  .mdl-typography--title {
-    font-family: 'Lusitana', serif;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em; }
-
-  .mdl-typography--title-color-contrast {
-    font-family: 'Lusitana', serif;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    opacity: 0.87; }
-
-  .mdl-typography--body-1 {
-    font-family: 'Lusitana', serif;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0; }
-
-  .mdl-typography--body-1-color-contrast {
-    font-family: 'Lusitana', serif;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0;
     opacity: 0.87; } }
 
 @media (min-width: 480px) and (max-width: 839px) {
