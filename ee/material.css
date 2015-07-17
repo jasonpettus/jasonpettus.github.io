@@ -9628,7 +9628,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     height: 4em;
     padding: 0 0 0 0;
     margin: 0;
-    border-bottom: 1px solid rgb(224,224,224); }
+    border-bottom: 1px solid rgb(224,224,224);
+    overflow: scroll; }
 
   .mdl-tabs__tab {
     margin: 0;
@@ -9646,7 +9647,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-size: 3em;
     text-transform: uppercase;
     color: rgba(0,0,0, 0.54);
-    overflow: scroll; }
+    overflow: hidden; }
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
