@@ -9604,6 +9604,32 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     line-height: 1.4em;
     opacity: 0.54; }
 
+  .mdl-tabs__tab-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 4em;
+    padding: 0 0 0 0;
+    margin: 0;
+    border-bottom: 1px solid rgb(224,224,224); }
+
   .mdl-tabs__tab {
     margin: 0;
     border: none;
