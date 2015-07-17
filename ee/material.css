@@ -9625,7 +9625,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 8em;
+    height: 192px;
     padding: 0 0 0 0;
     margin: 0;
     border-bottom: 1px solid rgb(224,224,224);
@@ -9634,17 +9634,17 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-tabs__tab {
     margin: 0;
     border: none;
-    padding: 0 3.5em 0 3.5em;
+    padding: 0 96px 0 96px;
     float: left;
     position: relative;
     display: block;
     color: red;
     text-decoration: none;
-    height: 4em;
-    line-height: 4em;
+    height: 192px;
+    line-height: 192px;
     text-align: center;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 56px;
     text-transform: uppercase;
     color: rgba(0,0,0, 0.54);
     overflow: visible; }
