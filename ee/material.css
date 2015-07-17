@@ -9554,25 +9554,25 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
   .mdl-typography--title {
     font-family: 'Lusitana', serif;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: 700;
     line-height: 1; }
 
   .mdl-typography--title-color-contrast {
     font-family: 'Lusitana', serif;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: 700;
     line-height: 1;
     opacity: 0.87; }
 
   .mdl-typography--body-1 {
     font-family: 'Lusitana', serif;
-    font-size: 28px;
+    font-size: 3em;
     font-weight: 400; }
 
   .mdl-typography--body-1-color-contrast {
     font-family: 'Lusitana', serif;
-    font-size: 28px;
+    font-size: 3em;
     font-weight: 400;
     opacity: 0.87; } }
 
