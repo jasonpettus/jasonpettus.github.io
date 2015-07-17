@@ -9576,7 +9576,33 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-size: 4em;
     font-weight: 400;
     line-height: 1.4em;
-    opacity: 0.87; } }
+    opacity: 0.87; }
+
+  .mdl-typography--display-2 {
+    font-family: 'Lusitana', serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.4em; }
+
+  .mdl-typography--display-2-color-contrast {
+    font-family: 'Lusitana', serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.4em;
+    opacity: 0.54; }
+
+  .mdl-typography--display-1 {
+    font-family: 'Lusitana', serif;
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1.4em; }
+
+  .mdl-typography--display-1-color-contrast {
+    font-family: 'Lusitana', serif;
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1.4em;
+    opacity: 0.54; } }
 
 @media (min-width: 480px) and (max-width: 839px) {
   .mdl-grid {
