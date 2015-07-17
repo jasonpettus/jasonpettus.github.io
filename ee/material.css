@@ -9647,7 +9647,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-size: 3em;
     text-transform: uppercase;
     color: rgba(0,0,0, 0.54);
-    overflow: hidden; }
+    overflow: visible; }
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
