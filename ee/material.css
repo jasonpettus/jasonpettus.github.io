@@ -949,13 +949,13 @@ ul, ol {
 
 .mdl-typography--title {
   font-family: 'Lusitana', serif;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1; }
 
 .mdl-typography--title-color-contrast {
   font-family: 'Lusitana', serif;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
   opacity: 0.87; }
@@ -990,12 +990,12 @@ ul, ol {
 
 .mdl-typography--body-1 {
   font-family: 'Lusitana', serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400; }
 
 .mdl-typography--body-1-color-contrast {
   font-family: 'Lusitana', serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
   opacity: 0.87; }
 
@@ -9419,6 +9419,30 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-grid--no-spacing > .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
       width: 100%; }
 
+  .mdl-typography--title {
+    font-family: 'Lusitana', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1; }
+
+  .mdl-typography--title-color-contrast {
+    font-family: 'Lusitana', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.87; }
+
+  .mdl-typography--body-1 {
+    font-family: 'Lusitana', serif;
+    font-size: 28px;
+    font-weight: 400; }
+
+  .mdl-typography--body-1-color-contrast {
+    font-family: 'Lusitana', serif;
+    font-size: 28px;
+    font-weight: 400;
+    opacity: 0.87; } }
+
 /* --------------------------------------------- IPHONE ONLY */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
@@ -9552,33 +9576,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-size: 4em;
     font-weight: 400;
     line-height: 1.4em;
-    opacity: 0.87; }
-
-  .mdl-typography--display-2 {
-    font-family: 'Lusitana', serif;
-    font-size: 5em;
-    font-weight: 700;
-    line-height: 1.4em; }
-
-  .mdl-typography--display-2-color-contrast {
-    font-family: 'Lusitana', serif;
-    font-size: 5em;
-    font-weight: 700;
-    line-height: 1.4em;
-    opacity: 0.54; }
-
-  .mdl-typography--display-1 {
-    font-family: 'Lusitana', serif;
-    font-size: 4em;
-    line-height: 1.4em;
-    font-weight: 400; }
-
-  .mdl-typography--display-1-color-contrast {
-    font-family: 'Lusitana', serif;
-    font-size: 4em;
-    line-height: 1.4em;
-    font-weight: 400;
-    opacity: 0.54; } }
+    opacity: 0.87; } }
 
 @media (min-width: 480px) and (max-width: 839px) {
   .mdl-grid {
