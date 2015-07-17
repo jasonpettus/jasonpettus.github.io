@@ -1,17 +1,19 @@
-.goudy {
-  font-family: 'Sorts Mill Goudy', serif;
-}
-
 .lora {
   font-family: 'Lora', serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
 }
 
 .vollkorn {
   font-family: 'Vollkorn', serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
 }
 
 .crimson {
   font-family: 'Crimson Text', serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
 }
 
 .cardo {
@@ -22,10 +24,8 @@
 
 .lusitana {
   font-family: 'Lusitana', serif;
-}
-
-.fanwood {
-  font-family: 'Fanwood Text', serif;
+  font-size: 1.25em;
+  line-height: 1.4em;
 }
 
 .bold {
@@ -60,7 +60,7 @@ p {
 }
 
 .mdl-grid {
-
+  max-width: 900px;
 }
 
 .mdl-cell {
@@ -90,6 +90,7 @@ p {
 
 .med_box_image {
   height: 25%;
+  padding-left: 1em;
 }
 
 .round {
