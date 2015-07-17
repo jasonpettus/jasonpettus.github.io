@@ -9625,7 +9625,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 4em;
+    height: 8em;
     padding: 0 0 0 0;
     margin: 0;
     border-bottom: 1px solid rgb(224,224,224);
