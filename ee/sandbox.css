@@ -107,3 +107,8 @@ p {
 #banner {
   text-align: center;
 }
+
+.photo-overlay {
+  background-color: black;
+  opacity: 0.5;
+}
