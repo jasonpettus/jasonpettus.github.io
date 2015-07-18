@@ -6359,7 +6359,7 @@ ul, ol {
   color: rgb(66,66,66);
   text-decoration: none;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 26px;
   margin: 0; }
 
 .mdl-layout {
@@ -6393,7 +6393,7 @@ ul, ol {
   display: block;
   position: relative;
   font-family: 'Lusitana', serif;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -9579,13 +9579,13 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
   .mdl-typography--display-3 {
     font-family: 'Lusitana', serif;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.4em;
     font-weight: 700; }
 
   .mdl-typography--display-3-color-contrast {
     font-family: 'Lusitana', serif;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.4em;
     font-weight: 700;
     opacity: 0.87; }
@@ -9618,13 +9618,13 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
   .mdl-layout-title {
     font-family: 'Lusitana', serif;
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.4em;
     font-weight: 700; }
 
   .mdl-navigation__link {
     font-family: 'Lusitana', serif;
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1.4em;
     font-weight: 400; }
 }
