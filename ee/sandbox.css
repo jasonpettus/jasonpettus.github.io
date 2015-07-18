@@ -51,14 +51,6 @@ p {
   text-align: center;
 }
 
-.image {
-  background-image: url("obama.jpg");
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0;
-}
-
 .mdl-grid {
   max-width: 900px;
 }
@@ -66,6 +58,14 @@ p {
 .mdl-cell {
   padding: 0.75em;
   background-color: white;
+}
+
+.image {
+  background-image: url("obama.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0em;
 }
 
 .logo {
@@ -112,4 +112,5 @@ p {
 .photo-overlay {
   background-color: black;
   opacity: 0.5;
+  padding: 0.75em;
 }
