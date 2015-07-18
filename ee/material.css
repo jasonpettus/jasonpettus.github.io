@@ -9628,12 +9628,15 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     line-height: 1.4em;
     font-weight: 400; }
 
+  .mdl-menu {
+    width: 100%;
+  }
+
   .mdl-menu__item {
     font-family: 'Lusitana', serif;
     font-size: 3em;
     line-height: 1.4em;
     font-weight: 400;
-    width: 100%;
     height: auto; }
 }
 
