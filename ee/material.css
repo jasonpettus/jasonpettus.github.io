@@ -9642,9 +9642,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-weight: 400;
     height: auto; }
 
-  .material-icons {
-    font-size: 60px;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
