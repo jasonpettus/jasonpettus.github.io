@@ -19,11 +19,22 @@
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header white">
-  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+  <div class="mdl-layout--small-screen-only mdl-layout mdl-js-layout mdl-layout--drawer
+            mdl-layout--overlay-drawer-button">
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  </div>
+
+  <div class="mdl-layout--large-screen-only mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
     <div class="mdl-tabs__tab-bar">
-      <div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button">
-        <i class="material-icons">chevron_left</i>
-      </div>
       <a href="#starks-panel" class="mdl-tabs__tab is-active">World</a>
       <a href="#lannisters-panel" class="mdl-tabs__tab">Nation</a>
       <a href="#targaryens-panel" class="mdl-tabs__tab">Local</a>
@@ -32,9 +43,6 @@
       <a href="#targaryens-panel" class="mdl-tabs__tab">Sports</a>
       <a href="#targaryens-panel" class="mdl-tabs__tab">Entertainment</a>
       <a href="#targaryens-panel" class="mdl-tabs__tab">Science</a>
-      <div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button">
-        <i class="material-icons">chevron_right</i>
-      </div>
     </div>
   </div>
   </header>
