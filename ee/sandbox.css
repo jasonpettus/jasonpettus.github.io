@@ -88,6 +88,10 @@ p {
   float: right;
 }
 
+.cl-r {
+  clear: right;
+}
+
 .med_box_image {
   height: 25%;
   padding-left: 1em;
@@ -95,14 +99,6 @@ p {
 
 .round {
   border-radius: 15px;
-}
-
-.white {
-  background-color: white;
-}
-
-.t-white {
-  color: white;
 }
 
 #banner {
