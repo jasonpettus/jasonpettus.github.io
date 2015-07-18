@@ -9604,15 +9604,19 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     opacity: 0.54; }
 
   .mdl-layout__drawer {
+    width: 90%;
+  }
+
+  .mdl-layout-title {
     font-family: 'Lusitana', serif;
-    font-size: 5em;
+    font-size: 2em;
     line-height: 1.4em;
     font-weight: 700;
   }
 
   .mdl-navigation__link {
     font-family: 'Lusitana', serif;
-    font-size: 4em;
+    font-size: 2em;
     line-height: 1.4em;
     font-weight: 400;
   }
