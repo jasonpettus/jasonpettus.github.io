@@ -3859,7 +3859,9 @@ ul, ol {
   border-radius: 2px;
   color: rgb(0,0,0);
   display: block;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   height: 36px;
   min-width: 64px;
   padding: 0 8px;
