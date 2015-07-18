@@ -3860,8 +3860,8 @@ ul, ol {
   color: rgb(0,0,0);
   display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  right: 10px;
   height: 36px;
   min-width: 64px;
   padding: 0 8px;
