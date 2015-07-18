@@ -6458,7 +6458,6 @@ ul, ol {
     padding-left: 40px; }
     @media screen and (max-width: 850px) {
       .mdl-layout__drawer > .mdl-layout-title {
-        width: 600px;
         line-height: 56px;
         padding-left: 16px; } }
   .mdl-layout__drawer .mdl-navigation {
