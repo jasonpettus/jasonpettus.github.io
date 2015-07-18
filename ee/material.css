@@ -9641,11 +9641,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     line-height: 1.4em;
     font-weight: 400;
     height: auto; }
-
-  .mdl-layout--overlay-drawer-button {
-    width: 400%;
-    height: 400%;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
