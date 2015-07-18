@@ -9633,6 +9633,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     font-size: 3em;
     line-height: 1.4em;
     font-weight: 400;
+    width: 100%;
     height: auto; }
 }
 
