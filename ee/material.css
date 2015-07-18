@@ -6421,7 +6421,7 @@ ul, ol {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-  width: 700px;
+  width: 500px;
   height: 100%;
   max-height: 100%;
   position: absolute;
@@ -6431,9 +6431,9 @@ ul, ol {
   box-sizing: border-box;
   border-right: 1px solid rgb(224,224,224);
   background: rgb(250,250,250);
-  -webkit-transform: translateX(-710px);
-      -ms-transform: translateX(-710px);
-          transform: translateX(-710px);
+  -webkit-transform: translateX(-510px);
+      -ms-transform: translateX(-510px);
+          transform: translateX(-510px);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   will-change: transform;
@@ -9621,7 +9621,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 
   .mdl-layout-title {
     font-family: 'Lusitana', serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1.4em;
     font-weight: 700; }
 
