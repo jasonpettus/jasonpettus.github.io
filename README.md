@@ -1,6 +1,6 @@
-# Evening Edition [![Build Status](https://travis-ci.org/jasonpettus/evening-edition.svg?branch=master)](https://travis-ci.org/jasonpettus/evening-edition) [![Coverage Status](https://coveralls.io/repos/jasonpettus/evening-edition/badge.svg?branch=master&service=github)](https://coveralls.io/github/jasonpettus/evening-edition?branch=master)
-
 ![Evening Edition](https://raw.githubusercontent.com/jasonpettus/evening-edition/master/app/assets/images/eelogosmall.jpg)
+
+[![Build Status](https://travis-ci.org/jasonpettus/evening-edition.svg?branch=master)](https://travis-ci.org/jasonpettus/evening-edition) [![Coverage Status](https://coveralls.io/repos/jasonpettus/evening-edition/badge.svg?branch=master&service=github)](https://coveralls.io/github/jasonpettus/evening-edition?branch=master)
 
 Love your RSS reader, but miss the elegance and visual heirarchy of a traditional newspaper? What about all those times when you get served up half a dozen versions of the same story? **Evening Edition** is a Rubyfied feed reader that addresses both of these concerns: designed to be read only once a day, it lays out its stories in a manner pleasing to the eye, with visual clues as to which events are being talked about the most; and it examines these stories long before you read them, grouping similar articles together so that you see only one version (with a button and drop-down menu that lets you see the rest).
 
@@ -107,7 +107,7 @@ approve them, reject them, or modify bits and pieces of what you have submitted.
 
 ## Development and Testing
 
-Evening Edition was created under the precepts of Agile development, scrum project management, and test-driven coding, using a combination of RSpec, Jasmine, Capybara, Coveralls, TravisCI, Database Cleaner and Factory Girl.
+Evening Edition was created under the precepts of Agile development, scrum project management, and test-driven coding, using a combination of [Trello](http://www.trello.com), [RSpec](http://www.rspec.info), [Jasmine](http://jasmine.github.io), [Capybara](https://github.com/jnicklas/capybara), [Coveralls](https://coveralls.io/), [TravisCI](https://travis-ci.org/), [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner) and [Factory Girl](https://github.com/thoughtbot/factory_girl).
 
 ## Credits
 
