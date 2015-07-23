@@ -1,6 +1,6 @@
 # Evening Edition [![Build Status](https://travis-ci.org/jasonpettus/evening-edition.svg?branch=master)](https://travis-ci.org/jasonpettus/evening-edition) [![Coverage Status](https://coveralls.io/repos/jasonpettus/evening-edition/badge.svg?branch=master&service=github)](https://coveralls.io/github/jasonpettus/evening-edition?branch=master)
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eelogosmall.jpg
+![Evening Edition](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eelogosmall.jpg)
 
 Love your RSS reader, but miss the elegance and visual heirarchy of a traditional newspaper? What about all those times when you get served up half a dozen versions of the same story? **Evening Edition** is a Rubyfied feed reader that addresses both of these concerns: designed to be read only once a day, it lays out its stories in a manner pleasing to the eye, with visual clues as to which events are being talked about the most; and it examines these stories long before you read them, grouping similar articles together so that you see only one version (with a button and drop-down menu that lets you see the rest).
 
@@ -8,15 +8,15 @@ Check out the public build at: http://evening-edition.herokuapp.com
 
 ## Screenshots
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess1.png
+![Evening Edition screenshot #1](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess1.png)
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess2.png
+![Evening Edition screenshot #2](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess2.png)
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess3.png
+![Evening Edition screenshot #3](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess3.png)
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess4.png
+![Evening Edition screenshot #4](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess4.png)
 
-https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess5.png
+![Evening Edition screenshot #5](https://github.com/jasonpettus/evening-edition/tree/master/app/assets/images/eess5.png)
 
 ## Requirements
 - Ruby 2.0.0
