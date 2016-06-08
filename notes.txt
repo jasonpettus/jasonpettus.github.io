@@ -1,0 +1,7 @@
+Colors:
+Red #ff0000
+Purple
+Blue #0033ff
+Green
+Yellow #ffff00
+Orange

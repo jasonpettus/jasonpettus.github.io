@@ -1,0 +1,309 @@
+/* --------------------------------------------------------------- General specs */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+  padding: 0 5% 0 5%;
+}
+
+p b { font-weight: 700; }
+
+a:link {
+  color: #cc6600;
+  text-decoration: underline;
+  -webkit-animation: rainbow 1s infinite;
+  animation: rainbow 1s infinite;
+}
+
+ul { text-align: left; }
+
+form { display: inline; }
+
+/* --------------------------------------------------------------- All other typefaces */
+
+.wide {
+  font-family: 'Corben', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.narrow {
+  font-family: 'Pragati Narrow', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 0.8em;
+}
+
+.center {
+  text-align: center;
+}
+
+/* --------------------------------------------------------------- Page sections */
+
+#intro {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 20%;
+}
+
+.frontend-bg {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  background: #ff0000 url("frontend-bg.jpg") no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+}
+
+#frontend {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #ff0000;
+  position: relative;
+}
+
+.frontendbox1 {
+  margin: 0 70% 30% 0;
+  border: 50px solid black;
+  background-color: #9900ff;
+  position: absolute;
+}
+
+.frontendbox2 {
+  margin: 5% 0 30% 35%;
+  border: 50px solid black;
+  background-color: #9900ff;
+  float: right;
+  position: absolute;
+}
+
+.manager-bg {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #0033ff url("manager-bg.jpg") no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  position: relative;
+}
+
+#manager {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #0033ff;
+  position: relative;
+}
+
+.managerbox1 {
+  margin: 5% 40% 35% 0;
+  border: 50px solid black;
+  background-color: #00ff00;
+  position: absolute;
+}
+
+.managerbox2 {
+  margin: 0 0 30% 65%;
+  border: 50px solid black;
+  background-color: #00ff00;
+  float: right;
+  position: absolute;
+}
+
+.me-bg {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #ffff00 url("me-bg.jpg") no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  position: relative;
+}
+
+#me {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #ffff00;
+  position: relative;
+}
+
+.mebox1 {
+  margin: 0 50% 30% 0;
+  border: 50px solid black;
+  background-color: #ff9933;
+  position: absolute;
+}
+
+.mebox2 {
+  margin: 5% 0 35% 55%;
+  border: 50px solid black;
+  background-color: #ff9933;
+  float: right;
+  position: absolute;
+}
+
+/* --------------------------------------------------------------- Animations */
+
+@-webkit-keyframes rainbow {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+@keyframes rainbow {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+.arrow-blink {
+  -webkit-animation: blink 3s infinite;
+  animation: blink 3s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% {      opacity: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% {      opacity: 0; }
+}
+
+.trigger-left {
+  -webkit-animation: slideleft 0.4s ease;
+  animation: slideleft 0.4s ease;
+}
+
+.trigger-right {
+  -webkit-animation: slideright 0.4s ease;
+  animation: slideright 0.4s ease;
+}
+
+@-webkit-keyframes slideleft {
+  from { margin-left: 0%; margin-right: 50%;  }
+  to {   margin-left: 25%; margin-right: 25%; }
+}
+
+@keyframes slideleft {
+  from { margin-left: 0%; margin-right: 50%;  }
+  to {   margin-left: 25%; margin-right: 25%; }
+}
+
+@-webkit-keyframes slideright {
+  from { margin-right: 0%; margin-left: 50%;  }
+  to {   margin-right: 25%; margin-left: 25%; }
+}
+
+@keyframes slideright {
+  from { margin-right: 0%; margin-left: 50%;  }
+  to {   margin-right: 25%; margin-left: 25%; }
+}
+
+/* --------------------------------------------------------------- Just for phones */
+
+@media screen and (max-width: 736px) {
+  p {               font-size: 1.2em; }
+  .headline {       font-size: 2em; }
+  .subhead {        font-size: 1em; letter-spacing: 0em; }
+  .fineprint {      font-size: 0.8em; }
+  .alert .headline {font-size: 1.5em; }
+  #content {        padding: 1em; }
+  .alert {          width: auto; }
+  .bg {             background: url("../archives/skylinephone.jpg") no-repeat center center;}
+  @-webkit-keyframes slideleft {  from { margin-left: 0%; } to { margin-left: 0%; } }
+  @keyframes slideleft {          from { margin-left: 0%; } to { margin-left: 0%; } }
+  @-webkit-keyframes slideright { from { margin-left: 0%; } to { margin-left: 0%; } }
+  @keyframes slideright {         from { margin-left: 0%; } to { margin-left: 0%; } }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  p {        font-size: 0.9em; }
+  .subhead { font-size: 0.75em; }
+}
+
+/* --------------------------------------------------------------- Just for tablets */
+
+@media screen and (min-width: 737px) and (max-width: 1024px) {
+  #content { padding: 1em 15% 1em 15%; }
+  .alert {   width: 70%;}
+  @-webkit-keyframes slideleft {
+    from { margin-left: 0%; margin-right: 85%;  }
+    to {   margin-left: 15%; margin-right: 15%; }
+  }
+  @keyframes slideleft {
+    from { margin-left: 0%; margin-right: 85%;  }
+    to {   margin-left: 15%; margin-right: 15%; }
+  }
+  @-webkit-keyframes slideright {
+    from { margin-right: 0%; margin-left: 85%;  }
+    to {   margin-right: 15%; margin-left: 15%; }
+  }
+  @keyframes slideright {
+    from { margin-right: 0%; margin-left: 85%;  }
+    to {   margin-right: 15%; margin-left: 15%; }
+  }
+}
+
+/* --------------------------------------------------------------- Just for media centers */
+
+@media tv, screen and (min-width: 1920px) {
+  p {               font-size: 2em; }
+  .headline {       font-size: 4em; }
+  .subhead {        font-size: 2em; letter-spacing: 0em; }
+  .fineprint {      font-size: 1.5em; }
+  .alert {          width: 100%;}
+  .alert .headline {font-size: 3em; }
+  .vert-align {     left: 50%; text-align: left; }
+  #content {        padding: 1em 15% 1em 50%; position: absolute; }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10% 60% 0 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  @-webkit-keyframes slideleft {  from { margin-left: 0%; } to { margin-left: 0%; } }
+  @keyframes slideleft {          from { margin-left: 0%; } to { margin-left: 0%; } }
+  @-webkit-keyframes slideright { from { margin-left: 0%; } to { margin-left: 0%; } }
+  @keyframes slideright {         from { margin-left: 0%; } to { margin-left: 0%; } }
+}
+
+/* --------------------------------------------------------------- Just for printing to paper */
+
+@media print {
+  p {         color: black; font-size: 12pt; line-height: 1.4em; }
+  .headline { font-size: 48pt; }
+  .subhead {  font-size: 14pt; letter-spacing: 0em; word-spacing: 0; }
+  #content {  padding: 0 1in 0 1in; page-break-after: always; }
+  #sidebar {
+    padding: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
