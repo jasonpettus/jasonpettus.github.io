@@ -77,7 +77,6 @@ a:link {
 
 #frontend {
   background-color: red;
-  position: relative;
 }
 
 .frontendbox1 {
@@ -96,7 +95,6 @@ a:link {
 
 #manager {
   background-color: blue;
-  position: relative;
 }
 
 .managerbox1 {
@@ -115,7 +113,6 @@ a:link {
 
 #me {
   background-color: yellow;
-  position: relative;
 }
 
 .mebox1 {
