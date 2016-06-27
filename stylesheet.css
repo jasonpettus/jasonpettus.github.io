@@ -7,10 +7,10 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: -webkit-linear-gradient (white, red, blue, yellow);
-  background: -o-linear-gradient (white, red, blue, yellow);
-  background: -moz-linear-gradient (white, red, blue, yellow);
-  background: linear-gradient (white, red, blue, yellow);
+  background: -webkit-linear-gradient (red, blue, yellow);
+  background: -o-linear-gradient (red, blue, yellow);
+  background: -moz-linear-gradient (red, blue, yellow);
+  background: linear-gradient (red, blue, yellow);
 }
 
 p {
