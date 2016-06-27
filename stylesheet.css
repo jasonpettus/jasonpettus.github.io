@@ -19,6 +19,7 @@ p {
   font-size: 1em;
   text-align: left;
   font-family: 'Droid Serif', serif;
+  padding: 0 5% 0 5%;
 }
 
 p b { font-weight: 700; }
