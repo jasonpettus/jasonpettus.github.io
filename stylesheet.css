@@ -73,7 +73,7 @@ a:link {
 /* --------------------------------------------------------------- Page sections */
 
 #frontend {
-  background-color: red;
+  border: dotted 1px black;
 }
 
 .frontendbox1 {
@@ -91,7 +91,7 @@ a:link {
 }
 
 #manager {
-  background-color: blue;
+  border: dotted 1px black;
 }
 
 .managerbox1 {
@@ -109,7 +109,7 @@ a:link {
 }
 
 #me {
-  background-color: yellow;
+  border: dotted 1px black;
 }
 
 .mebox1 {
