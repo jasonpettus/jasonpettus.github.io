@@ -72,6 +72,10 @@ a:link {
 
 /* --------------------------------------------------------------- Page sections */
 
+#intro {
+  border: dotted 1px black;
+}
+
 #frontend {
   border: dotted 1px black;
 }
