@@ -7,6 +7,9 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+body {
   background: -webkit-linear-gradient (red, blue, yellow);
   background: -o-linear-gradient (red, blue, yellow);
   background: -moz-linear-gradient (red, blue, yellow);
