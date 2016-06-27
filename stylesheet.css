@@ -71,27 +71,10 @@ a:link {
 
 /* --------------------------------------------------------------- Page sections */
 
-#intro {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  position: relative;
-  padding-top: 3em;
-}
-
-#frontend {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-color: #ff0000;
-  position: relative;
-}
-
 .frontendbox1 {
   margin: 0 70% 30% 0;
   border: 50px solid black;
   background-color: #9900ff;
-  position: absolute;
 }
 
 .frontendbox2 {
@@ -99,22 +82,12 @@ a:link {
   border: 50px solid black;
   background-color: #9900ff;
   float: right;
-  position: absolute;
-}
-
-#manager {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-color: #0033ff;
-  position: relative;
 }
 
 .managerbox1 {
   margin: 5% 40% 35% 0;
   border: 50px solid black;
   background-color: #00ff00;
-  position: absolute;
 }
 
 .managerbox2 {
@@ -122,22 +95,12 @@ a:link {
   border: 50px solid black;
   background-color: #00ff00;
   float: right;
-  position: absolute;
-}
-
-#me {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-color: #ffff00;
-  position: relative;
 }
 
 .mebox1 {
   margin: 0 50% 30% 0;
   border: 50px solid black;
   background-color: #ff9933;
-  position: absolute;
 }
 
 .mebox2 {
@@ -145,7 +108,6 @@ a:link {
   border: 50px solid black;
   background-color: #ff9933;
   float: right;
-  position: absolute;
 }
 
 /* --------------------------------------------------------------- Animations */
