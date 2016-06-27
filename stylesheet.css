@@ -77,10 +77,18 @@ a:link {
 
 #intro {
   border: dotted 1px black;
+  background: -webkit-linear-gradient(white, red);
+  background: -o-linear-gradient(white, red);
+  background: -moz-linear-gradient(white, red);
+  background: linear-gradient(white, red);
 }
 
 #frontend {
   border: dotted 1px black;
+  background: -webkit-linear-gradient(red, blue);
+  background: -o-linear-gradient(red, blue);
+  background: -moz-linear-gradient(red, blue);
+  background: linear-gradient(red, blue);
 }
 
 .frontendbox1 {
@@ -97,6 +105,10 @@ a:link {
 
 #manager {
   border: dotted 1px black;
+  background: -webkit-linear-gradient(blue, yellow);
+  background: -o-linear-gradient(blue, yellow);
+  background: -moz-linear-gradient(blue, yellow);
+  background: linear-gradient(blue, yellow);
 }
 
 .managerbox1 {
@@ -113,6 +125,10 @@ a:link {
 
 #me {
   border: dotted 1px black;
+  background: -webkit-linear-gradient(yellow, white);
+  background: -o-linear-gradient(yellow, white);
+  background: -moz-linear-gradient(yellow, white);
+  background: linear-gradient(yellow, white);
 }
 
 .mebox1 {
