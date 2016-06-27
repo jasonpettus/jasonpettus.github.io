@@ -100,14 +100,14 @@ a:link {
 }
 
 .frontendbox1 {
-  margin-right: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #9900ff;
   float: left;
 }
 
 .frontendbox2 {
-  margin-left: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #9900ff;
   float: right;
@@ -123,14 +123,14 @@ a:link {
 }
 
 .managerbox1 {
-  margin-right: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #00ff00;
   float: left;
 }
 
 .managerbox2 {
-  margin-left: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #00ff00;
   float: right;
@@ -146,14 +146,14 @@ a:link {
 }
 
 .mebox1 {
-  margin-right: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #ff9933;
   float: left;
 }
 
 .mebox2 {
-  margin-left: 75%;
+  width: 25%;
   border: 50px solid black;
   background-color: #ff9933;
   float: right;
