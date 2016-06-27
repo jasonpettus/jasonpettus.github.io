@@ -10,10 +10,10 @@ html, body {
 }
 
 body {
-  background-color: -webkit-linear-gradient(top, white, red, blue, yellow);
-  background-color: -o-linear-gradient(top, white, red, blue, yellow);
-  background-color: -moz-linear-gradient(top, white, red, blue, yellow);
-  background-color: linear-gradient(top, white, red, blue, yellow);
+  background: -webkit-linear-gradient(top, white, red, blue, yellow);
+  background: -o-linear-gradient(top, white, red, blue, yellow);
+  background: -moz-linear-gradient(top, white, red, blue, yellow);
+  background: linear-gradient(top, white, red, blue, yellow);
 }
 
 p {
