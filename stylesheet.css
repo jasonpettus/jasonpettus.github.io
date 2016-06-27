@@ -90,6 +90,7 @@ a:link {
   background: -o-linear-gradient(red, blue);
   background: -moz-linear-gradient(red, blue);
   background: linear-gradient(red, blue);
+  position: relative;
 }
 
 .frontendbox1 {
