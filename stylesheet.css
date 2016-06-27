@@ -75,6 +75,10 @@ a:link {
 
 /* --------------------------------------------------------------- Page sections */
 
+#frontend {
+  background-color: red;
+}
+
 .frontendbox1 {
   margin: 0 70% 0 0;
   border: 50px solid black;
@@ -88,6 +92,10 @@ a:link {
   float: right;
 }
 
+#manager {
+  background-color: blue;
+}
+
 .managerbox1 {
   margin: 5% 40% 0 0;
   border: 50px solid black;
@@ -99,6 +107,10 @@ a:link {
   border: 50px solid black;
   background-color: #00ff00;
   float: right;
+}
+
+#me {
+  background-color: yellow;
 }
 
 .mebox1 {
