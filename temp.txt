@@ -1,3 +1,7 @@
+Experiment with position tags for floating layout
+
+
+
 #intro {
   border: dotted 1px black;
   background: -webkit-linear-gradient(white, red);

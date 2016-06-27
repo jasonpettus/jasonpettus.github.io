@@ -81,7 +81,6 @@ a:link {
   background: -o-linear-gradient(white, red);
   background: -moz-linear-gradient(white, red);
   background: linear-gradient(white, red);
-  position: relative;
 }
 
 #frontend {
@@ -90,7 +89,7 @@ a:link {
   background: -o-linear-gradient(red, blue);
   background: -moz-linear-gradient(red, blue);
   background: linear-gradient(red, blue);
-  position: relative;
+  overflow: auto;
 }
 
 .frontendbox1 {
@@ -112,7 +111,7 @@ a:link {
   background: -o-linear-gradient(blue, yellow);
   background: -moz-linear-gradient(blue, yellow);
   background: linear-gradient(blue, yellow);
-  position: relative;
+  overflow: auto;
 }
 
 .managerbox1 {
@@ -134,7 +133,7 @@ a:link {
   background: -o-linear-gradient(yellow, white);
   background: -moz-linear-gradient(yellow, white);
   background: linear-gradient(yellow, white);
-  position: relative;
+  overflow: auto;
 }
 
 .mebox1 {
