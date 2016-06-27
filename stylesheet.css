@@ -92,13 +92,13 @@ a:link {
 }
 
 .frontendbox1 {
-  width: 70%;
+  width: 30%;
   border: 50px solid black;
   background-color: #9900ff;
 }
 
 .frontendbox2 {
-  width: 25%;
+  width: 30%;
   border: 50px solid black;
   background-color: #9900ff;
 }
@@ -118,7 +118,7 @@ a:link {
 }
 
 .managerbox2 {
-  width: 65%;
+  width: 30%;
   border: 50px solid black;
   background-color: #00ff00;
 }
@@ -132,13 +132,13 @@ a:link {
 }
 
 .mebox1 {
-  width: 50%;
+  width: 30%;
   border: 50px solid black;
   background-color: #ff9933;
 }
 
 .mebox2 {
-  width: 45%;
+  width: 30%;
   border: 50px solid black;
   background-color: #ff9933;
 }
