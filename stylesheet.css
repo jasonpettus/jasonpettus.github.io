@@ -77,16 +77,18 @@ a:link {
 
 #frontend {
   background-color: red;
+  position: relative;
 }
 
 .frontendbox1 {
-  margin: 0 70% 0 0;
+  margin-right: 70%;
   border: 50px solid black;
   background-color: #9900ff;
+  float: left;
 }
 
 .frontendbox2 {
-  margin: 5% 0 0 35%;
+  margin-left: 35%;
   border: 50px solid black;
   background-color: #9900ff;
   float: right;
@@ -94,16 +96,18 @@ a:link {
 
 #manager {
   background-color: blue;
+  position: relative;
 }
 
 .managerbox1 {
-  margin: 5% 40% 0 0;
+  margin-right: 40%;
   border: 50px solid black;
   background-color: #00ff00;
+  float: left;
 }
 
 .managerbox2 {
-  margin: 0 0 0 65%;
+  margin-left: 65%;
   border: 50px solid black;
   background-color: #00ff00;
   float: right;
@@ -111,16 +115,18 @@ a:link {
 
 #me {
   background-color: yellow;
+  position: relative;
 }
 
 .mebox1 {
-  margin: 0 50% 0 0;
+  margin-right: 50%;
   border: 50px solid black;
   background-color: #ff9933;
+  float: left;
 }
 
 .mebox2 {
-  margin: 5% 0 0 55%;
+  margin-left: 55%;
   border: 50px solid black;
   background-color: #ff9933;
   float: right;
