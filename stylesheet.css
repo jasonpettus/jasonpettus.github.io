@@ -78,6 +78,18 @@ a:link {
   height: 100%;
 }
 
+.vert-align {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 #frontend {
   border: dotted 1px black;
   background: -webkit-linear-gradient(red, blue);
