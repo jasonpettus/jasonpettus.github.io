@@ -9,7 +9,7 @@ html, body {
   text-align: center;
 }
 
-html {
+body {
   background: -webkit-linear-gradient(top, white, red, blue, yellow);
   background: -o-linear-gradient(top, white, red, blue, yellow);
   background: -moz-linear-gradient(top, white, red, blue, yellow);
